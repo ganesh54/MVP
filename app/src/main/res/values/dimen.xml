@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="margin">10dp</dimen>
+    <dimen name="card_content_padding">12dp</dimen>
+    <dimen name="corners_margin">10dp</dimen>
+    <dimen name="image_size">250dp</dimen>
+    <dimen name="label_text_size_large">16sp</dimen>
+    <dimen name="label_text_size_medium">14sp</dimen>
+
+</resources>

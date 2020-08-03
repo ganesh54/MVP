@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MVP</string>
+    <string name="no_data_found">No data found</string>
+    <string name="loading">Loading please wait...</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name ="facebook_id">265261251476187</string>
+</resources>
