@@ -10,7 +10,9 @@ import com.example.mvp.activity.presenter.UserPresenter;
 import com.example.mvp.adapter.UserAdapter;
 import com.example.mvp.model.User;
 import com.example.mvp.model.Users;
+
 import java.util.ArrayList;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatTextView;
@@ -38,7 +40,6 @@ public class UserActivity extends AppCompatActivity implements UserView {
     private int TOTAL_PAGES = 0;
     private int perPage = 5;
     private int currentPage = page;
-    private static final String EMAIL = "meet.vaibhavpatil1986@gmail.com";
     private UserPresenter userPresenter;
 
     @Override
@@ -71,16 +72,14 @@ public class UserActivity extends AppCompatActivity implements UserView {
                 int visibleItemCount = layoutManager.getChildCount();
                 int totalItemCount = layoutManager.getItemCount();
                 int firstVisibleItemPosition = layoutManager.findFirstVisibleItemPosition();
-                String TAG="Ganesh";
                 if (!isLoading && !isLastPage) {
-                    Log.e(TAG,"inside loding if=");
                     if ((visibleItemCount + firstVisibleItemPosition) >= totalItemCount
                             && firstVisibleItemPosition >= 0) {
                         currentPage += 1;
-                        isLoading=true;
+                        isLoading = true;
                         userPresenter.callNextUser(currentPage, perPage);
                     }
-               }
+                }
             }
         });
 
